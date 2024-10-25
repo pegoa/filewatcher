@@ -103,7 +103,7 @@ class Program
 
             // Set the updated access control settings for the directory
             Directory.SetAccessControl(directoryPath, directorySecurity);
-            Log($"Updated permissions for directory: {directoryPath}");
+            // Log($"Updated permissions for directory: {directoryPath}");
 
             // Recursively apply permissions to subdirectories
             foreach (string subDirectory in Directory.GetDirectories(directoryPath))
